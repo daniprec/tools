@@ -28,8 +28,6 @@ def upscale_image(file_path: str, scale_factor: int = 4):
 
 
 def main(file_path: str, scale_factor: int = 4):
-    if file_path is None:
-        file_path = input("Enter the file path: ")
     upscale_image(file_path=file_path, scale_factor=scale_factor)
 
 
