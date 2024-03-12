@@ -4,7 +4,7 @@ import typer
 from PIL import Image
 
 
-def upscale_image(file_path: str, scale_factor: int = 4):
+def upscale_image(file_path: str, scale_factor: int = 5):
     # Load the image
     image = Image.open(file_path)
 
@@ -27,7 +27,7 @@ def upscale_image(file_path: str, scale_factor: int = 4):
     upscaled_image.save(upscaled_file_path)
 
 
-def main(file_path: str, scale_factor: int = 4):
+def main(file_path: str, scale_factor: int = 5):
     upscale_image(file_path=file_path, scale_factor=scale_factor)
 
 
