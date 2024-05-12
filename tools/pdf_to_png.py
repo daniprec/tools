@@ -11,7 +11,7 @@ def convert_pdf_to_png(pdf_path, output_folder):
 
         # Save each image as a PNG
         for i, image in enumerate(images):
-            image.save(f"{output_folder}/page_{i + 1}.png", "PNG")
+            image.save(f"{output_folder}/page_{i + 1:03}.png", "PNG")
 
         print(f"Successfully converted {len(images)} pages to PNG.")
 

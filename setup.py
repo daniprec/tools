@@ -16,5 +16,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.9",
-    install_requires=["black", "typer"],
+    install_requires=["black", "PyPDF2", "typer"],
 )
